@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>拼图游戏</title>
+  <link rel="stylesheet" href="style/start.css">
+</head>
+<body>
+  <div class="start">
+    <h1>拼图小游戏</h1>
+    <div>
+      <span class="title">请选择难度:</span>
+      <select id='difficult'>
+        <option value="easy">简单 3*3</option>
+        <option value="middle">中等 6*6</option>
+        <option value="hard">困难 9*9</option>
+      </select>
+    </div>
+    <div>
+      <span class="title">请上传图片:</span>
+      <label for="uploadImage" class="uploadImage"><img src="img/upload.png"></label>
+      <input type="file" accept="image/*" name="image" value="" id="uploadImage" hidden="hidden">
+    </div>
+    <div>
+      <button id="start">开始游戏</button>
+    </div>
+    <div>
+      <span class="title">图片预览:</span>
+      <img id="look" class="look">
+    </div>
+  </div>
+  <canvas id="canvas" height=400px width=400px>
+  </canvas>
+</body>
+  <script src="script/get-form.js"></script>
+</html>
