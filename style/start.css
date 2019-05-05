@@ -28,7 +28,12 @@
   width: 200px;
   display: block;
 }
-canvas{
+#canvas{
   display: flow-root;
   margin: auto;
+  border: 1px solid black;
+  width:420px
+}
+canvas{
+  border: 1px solid white;
 }
