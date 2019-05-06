@@ -7,9 +7,9 @@
   <link rel="stylesheet" href="style/start.css">
 </head>
 <body>
-  <div class="start">
-    <h1>拼图小游戏</h1>
-    <div>
+  <div class="start" id='welecome'>
+    <h1>欢迎来到拼图小游戏</h1>
+    <div class='difficult'>
       <span class="title">请选择难度:</span>
       <select id='difficult'>
         <option value="easy">简单 3*3</option>
@@ -17,21 +17,23 @@
         <option value="hard">困难 9*9</option>
       </select>
     </div>
-    <div>
+    <br>
+    <div class='upload'>
       <span class="title">请上传图片:</span>
       <label for="uploadImage" class="uploadImage"><img src="img/upload.png"></label>
       <input type="file" accept="image/*" name="image" value="" id="uploadImage" hidden="hidden">
     </div>
+    <br>
     <div>
       <button id="start">开始游戏</button>
     </div>
-    <div>
-      <span class="title">图片预览:</span>
-      <img id="look" class="look">
+    <br>
+    <div class='tip'>
+      <span>提示: 双击改变方向，拖拽改变位置。</span>
     </div>
   </div>
-  <div id="canvas">
-  </div>
+  <img id="sourceimg" class="sourceimg">
+  <div id="canvas"></div>
 </body>
-  <script src="script/get-form.js"></script>
+  <script src="script/main.js"></script>
 </html>
